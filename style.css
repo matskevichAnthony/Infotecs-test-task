@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+.content-wrapper {
+  padding-top: 2rem;
+  gap: 0.6rem;
+  display: flex;
+  justify-content: center;
+}
+.table-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.button-wrapper {
+  width: 50%;
+  height: auto;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.7rem;
+}
+.pagination-wrapper {
+  padding-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.page-button {
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  background-color: white;
+  border-radius: 0.3rem;
+  border: 1px solid #c4c4c4;
+  transition: background-color 0.4s linear;
+}
+.page-button:hover {
+  background-color: #c8f0e6;
+}
+.button-wrapper h1 {
+  color: #1d6357;
+  font-size: 1rem;
+  flex-basis: 100%;
+}
+.show-hide-button {
+  padding: 0.4rem;
+  border: 1px solid #c4c4c4;
+  border-radius: 1rem;
+  background-color: white;
+  transition: background 0.4s linear;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.show-hide-button:hover {
+  background-color: #c8f0e6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  justify-content: center;
+  transition: all 1s linear;
+  border-spacing: 0;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+}
+tr {
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background: #ffffff;
+}
+tr:hover {
+  background-color: #c8f0e6;
+}
+
+#table-header {
+  background: #1d6357;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#table-header td:hover {
+  background: #32a895;
+  transition: background 0.3s linear;
+}
+
+.cell.active {
+  font-size: 0rem;
+  text-transform: none;
+  pointer-events: none;
+}
+
+.cell.active span {
+  transition: all 0.3s linear;
+  font-size: 0rem;
+}
+
+th,
+td {
+  cursor: pointer;
+  border: none;
+  padding: 0.8rem;
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+.color {
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.change-info-window-wrapper {
+  position: relative;
+  margin-top: 6.5rem;
+}
+
+.change-info-window {
+  width: 16rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 2rem;
+  border: 1px solid #c4c4c4;
+  display: none;
+  transition: all 1s ease;
+  position: fixed;
+}
+
+.change-info-window.active {
+  display: block;
+}
+
+.info-window-input-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.info-window-input-wrapper input {
+  padding: 0.4rem;
+  border: 1px solid #dddddd;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.change-button {
+  border: 1px solid #aaaaaa;
+  background: none;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.change-button:hover {
+  background-color: #c8f0e6;
+  transform: scale(0.9);
+}
